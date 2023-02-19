@@ -1,0 +1,33 @@
+
+#first-container{
+
+    text-align: center;
+}
+
+
+.second-container{
+    margin: 160px;
+    margin-left:5px;
+}
+
+#text-two{
+    margin-left: 70px;
+
+}
+.text-element{
+    margin-left: 90px;
+    height: 20px;
+   
+
+}
+#main{
+
+    background-image: url('images.png');
+}
+
+#estimate-price-button{
+
+    height:50px;
+    width: 100px;
+    margin-right: 140px;
+}
