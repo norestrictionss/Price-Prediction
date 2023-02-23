@@ -15,22 +15,23 @@ y = dataset['price']
 scaler = MinMaxScaler()
 x_train, x_test, y_train, y_test = train_test_split(x, y)
 
-# Model Building Part with Linear Regression
-lr = LinearRegression()
-lr.fit(x_train, y_train)
-lr.predict(x_test)
-print("Actual Result: ")
-print(y_test)
-print("Predictions: ")
-result = lr.predict(x_test)
-result = pd.DataFrame(data=result)
-print(result)
+def linear_regression(x_train, y_train, x_test):
 
-# L1 Regularization
-lasso = Lasso()
-lasso.fit(x_train, y_train)
-print(pd.DataFrame(data=lasso.predict(x_test)))
-scores = cross_val_score(LinearRegression(), x, y, cv=k_folds)
-print(scores)
+    # Model Building Part with Linear Regression
+    lr = LinearRegression()
+    lr.fit(x_train, y_train)
 
-# Next will come later on.
+    result = lr.predict(x_test)
+    result = pd.DataFrame(data=result)
+    return result
+
+def lasso():
+
+    # L1 Regularization
+    lasso = Lasso()
+    lasso.fit(x_train, y_train)
+    print(pd.DataFrame(data=lasso.predict(x_test)))
+    scores = cross_val_score(LinearRegression(), x, y, cv=k_folds)
+    print(scores)
+
+    # Next will come later on.

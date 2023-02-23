@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+
+{% block first_block %}
+   
+        <h1>Estate Price Prediction</h1>
+
+        <div class="second-container">
+            <h2>AREA</h2>
+            <input type="text" class="text-element">
+        </div>
+
+        <div class="second-container">
+            <h2 id="text-two">Number of Bath</h2>
+            <input type="text" class="text-element">
+        </div>
+        
+
+        <button id="estimate-price-button">Estimate Price</button>
+
+{% endblock %}
+
+{% block second_block %}
+    <form method = "POST" class ="form-register">
+        <h1>Estate Price Prediction</h1><br>
+        {{form.hidden_tag()}}
+        {{form.area.label()}}
+        {{form.area(size=15, placeholder = "User Name")}}<br>
+        {{form.number_of_bath.label()}}<br>
+        {{form.number_of_bath(placeholder = "Number of Bath")}}<br>
+        {{form.number_of_bedroom.label()}}<br>
+        {{form.number_of_bedroom(placeholder = "Number of Bedrooms")}}<br>
+        {{form.submit_button}}<br>
+
+
+    </form>
+{% endblock %}

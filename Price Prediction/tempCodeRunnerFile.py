@@ -1,0 +1,2 @@
+
+    print(form.area.value)

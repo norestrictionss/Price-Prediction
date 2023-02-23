@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body id="main" style="background-image: url('images.png');">
+
+    <div id="first-container">
+        {% block second_block %}{% endblock %}
+    </div>
+
+
+</body>
+<style>
+
+#first-container{
+
+    text-align: center;
+}
+
+
+.second-container{
+    margin: 160px;
+    margin-left:5px;
+}
+
+#text-two{
+    margin-left: 70px;
+
+}
+.text-element{
+    margin-left: 90px;
+    height: 20px;
+
+
+}
+#main{
+
+    background-image: url('images.png');
+}
+
+#estimate-price-button{
+
+    height:50px;
+    width: 100px;
+    margin-right: 140px;
+}
+</style>
+</html>
