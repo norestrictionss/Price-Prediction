@@ -1,0 +1,2 @@
+-This program predicts the price depending on a data provided by user. 
+-To run the program, you must execute app.py file. Eventually, you must get to the link http://localhost:8080/index
